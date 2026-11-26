@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Елена Ставрова - фотограф, портреты и свадьбы в Москве</title>
+<meta name="description" content="Портфолио фотографа Елены Ставровой: портреты, свадьбы, семейные съёмки и интерьеры. Запись на съёмку онлайн.">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--stone:#e9e7e2;--chalk:#f5f4f0;--navy:#1b2438;--slate:#5b6477;--rust:#a8442a;
+--bs-body-font-family:'Jost',system-ui,sans-serif;--bs-body-color:var(--navy);--bs-body-bg:var(--chalk)}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-weight:300;font-size:1.05rem}
+h1,h2,h3,.logo{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500}
+.navbar{background:rgba(245,244,240,.94);backdrop-filter:blur(6px);border-bottom:1px solid #d6d3cc}
+.logo{font-size:1.5rem;color:var(--navy);text-decoration:none;font-style:italic}
+.navbar .nav-link{color:var(--navy);font-weight:400;letter-spacing:.02em}
+.navbar .nav-link:hover{color:var(--rust)}
+.btn-rust{--bs-btn-bg:var(--rust);--bs-btn-border-color:var(--rust);--bs-btn-color:#fff;--bs-btn-hover-bg:#8a3520;--bs-btn-hover-border-color:#8a3520;--bs-btn-hover-color:#fff;--bs-btn-active-bg:#722a19;--bs-btn-active-border-color:#722a19;--bs-btn-active-color:#fff;border-radius:0;padding:.7rem 1.6rem;font-weight:400}
+.btn-line{--bs-btn-color:var(--navy);--bs-btn-border-color:var(--navy);--bs-btn-hover-bg:var(--navy);--bs-btn-hover-border-color:var(--navy);--bs-btn-hover-color:#fff;--bs-btn-active-bg:var(--navy);--bs-btn-active-color:#fff;border-radius:0;padding:.7rem 1.6rem;font-weight:400}
+.hero{padding:7rem 0 3rem}
+.hero h1{font-size:clamp(2.8rem,8vw,6rem);line-height:.98;letter-spacing:-.02em}
+.hero h1 em{display:block;color:var(--slate)}
+.hero-frame{aspect-ratio:4/5;width:100%;display:block;object-fit:cover}
+.section{padding:4.5rem 0}
+.section-stone{background:var(--stone)}
+h2{font-size:clamp(2rem,5vw,3.2rem)}
+.filters .btn{border-radius:0;border:0;border-bottom:2px solid transparent;color:var(--slate);padding:.4rem .2rem;margin-right:1.2rem;background:none;font-weight:400}
+.filters .btn.active,.filters .btn:hover{color:var(--navy);border-bottom-color:var(--rust)}
+.work{position:relative;display:block;width:100%;padding:0;border:0;background:none;overflow:hidden;cursor:zoom-in}
+.work img{width:100%;display:block;transition:transform .5s ease}
+.work:hover img,.work:focus-visible img{transform:scale(1.04)}
+.work span{position:absolute;left:0;right:0;bottom:0;padding:1.5rem .9rem .7rem;color:#fff;text-align:left;background:linear-gradient(transparent,rgba(15,20,32,.75));font-family:'Cormorant Garamond',serif;font-size:1.2rem;opacity:0;transition:opacity .3s}
+.work:hover span,.work:focus-visible span{opacity:1}
+.work-item{transition:opacity .3s}
+.accordion{--bs-accordion-bg:transparent;--bs-accordion-border-color:#c9c5bc;--bs-accordion-active-bg:transparent;--bs-accordion-active-color:var(--navy);--bs-accordion-btn-focus-box-shadow:0 0 0 .2rem rgba(168,68,42,.2);--bs-accordion-border-radius:0;--bs-accordion-inner-border-radius:0}
+.accordion-button{font-family:'Cormorant Garamond',serif;font-size:1.5rem;background:transparent!important;box-shadow:none}
+.accordion-item{border-left:0;border-right:0}
+.pr{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--rust);white-space:nowrap}
+.quote{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,3vw,1.9rem);font-style:italic;line-height:1.4}
+.form-control,.form-select{border-radius:0;background:transparent;border-color:#a8a59d}
+.form-control:focus,.form-select:focus{background:#fff;border-color:var(--navy);box-shadow:none}
+.modal-content{border-radius:0}
+footer{background:var(--navy);color:#b9bfce}
+footer a{color:#e7e9f0;text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+.toast-zone{position:fixed;top:78px;right:1rem;left:1rem;max-width:26rem;margin-left:auto;z-index:2000}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.work img{transition:none}}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+ <div class="container">
+  <a class="logo" href="#top">Елена Ставрова</a>
+  <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="nav">
+   <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+    <li class="nav-item"><a class="nav-link" href="#works">Работы</a></li>
+    <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+    <li class="nav-item"><a class="nav-link" href="#prices">Условия</a></li>
+    <li class="nav-item"><a class="nav-link" href="#words">Отзывы</a></li>
+    <li class="nav-item"><a class="btn btn-rust btn-sm mt-2 mt-lg-0" href="#contact">Записаться</a></li>
+   </ul>
+  </div>
+ </div>
+</nav>
+
+<header class="hero" id="top">
+ <div class="container">
+  <div class="row g-5 align-items-end">
+   <div class="col-lg-7">
+    <h1>Снимаю людей так, как они выглядят, когда о камере забыли<em>Москва и выезд по России</em></h1>
+    <p class="mt-4 col-lg-9 text-secondary">Портреты, свадьбы и семейные истории. Двенадцать лет в кадре, около четырёхсот съёмок, и ни одной постановочной улыбки.</p>
+    <div class="d-flex flex-wrap gap-3 mt-4">
+     <a class="btn btn-rust" href="#contact">Записаться на съёмку</a>
+     <a class="btn btn-line" href="#works">Смотреть работы</a>
+    </div>
+   </div>
+   <div class="col-lg-5"><img id="heroImg" class="hero-frame" alt="Портрет в мягком вечернем свете: силуэт человека на фоне тёплого неба"></div>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="section" id="works">
+ <div class="container">
+  <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 gap-3">
+   <h2 class="mb-0">Избранные работы</h2>
+   <div class="filters" id="filters" role="group" aria-label="Фильтр по жанрам">
+    <button type="button" class="btn active" data-f="all">Все</button>
+    <button type="button" class="btn" data-f="portrait">Портрет</button>
+    <button type="button" class="btn" data-f="wedding">Свадьба</button>
+    <button type="button" class="btn" data-f="interior">Интерьер</button>
+   </div>
+  </div>
+  <div class="row g-3" id="grid"></div>
+ </div>
+</section>
+
+<section class="section section-stone" id="about">
+ <div class="container">
+  <div class="row g-5 align-items-center">
+   <div class="col-md-5 col-lg-4"><img id="aboutImg" class="w-100" style="aspect-ratio:3/4;object-fit:cover" alt="Автопортрет фотографа: силуэт с камерой на фоне окна"></div>
+   <div class="col-md-7 col-lg-8">
+    <h2>Здравствуйте, меня зовут Елена</h2>
+    <p class="mt-3">Я закончила Школу фотографии и мультимедиа имени Родченко и начинала с репортажа. Из репортажа я принесла главное: не мешать, наблюдать и ловить момент, пока он настоящий.</p>
+    <p>Перед съёмкой мы обязательно созваниваемся на двадцать минут: говорим о вас, о месте, о свете. Для многих это лучшая часть, потому что к началу съёмки вы уже не чувствуете себя перед объективом чужим.</p>
+    <div class="row text-center text-md-start mt-4 g-3">
+     <div class="col-4"><div class="h2 mb-0 pr">12 лет</div><small class="text-secondary">в профессии</small></div>
+     <div class="col-4"><div class="h2 mb-0 pr">400+</div><small class="text-secondary">проведённых съёмок</small></div>
+     <div class="col-4"><div class="h2 mb-0 pr">7 дней</div><small class="text-secondary">до первых кадров</small></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="prices">
+ <div class="container">
+  <div class="row g-5">
+   <div class="col-lg-4"><h2>Форматы и стоимость</h2><p class="text-secondary">Цены указаны за съёмку целиком. Предоплата 30 процентов закрепляет дату в моём календаре.</p><button class="btn btn-line" type="button" data-book="Консультация">Узнать, что подойдёт мне</button></div>
+   <div class="col-lg-8">
+    <div class="accordion" id="priceAcc">
+     <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="true" aria-controls="a1"><span class="me-auto">Портретная съёмка</span><span class="pr me-3">от 12 000 &#8381;</span></button></h3><div id="a1" class="accordion-collapse collapse show" data-bs-parent="#priceAcc"><div class="accordion-body"><p>Полтора часа в студии или на улице, один образ или два. Двадцать обработанных кадров, остальные в цветокоррекции по запросу.</p><button class="btn btn-rust btn-sm" type="button" data-book="Портретная съёмка">Записаться</button></div></div></div>
+     <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="a2"><span class="me-auto">Свадебный день</span><span class="pr me-3">от 48 000 &#8381;</span></button></h3><div id="a2" class="accordion-collapse collapse" data-bs-parent="#priceAcc"><div class="accordion-body"><p>Шесть часов с утра невесты до первого танца. Не менее 350 обработанных кадров, онлайн-галерея и мини-история из десяти фотографий через три дня после праздника.</p><button class="btn btn-rust btn-sm" type="button" data-book="Свадебный день">Записаться</button></div></div></div>
+     <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="a3"><span class="me-auto">Семейная съёмка</span><span class="pr me-3">от 16 000 &#8381;</span></button></h3><div id="a3" class="accordion-collapse collapse" data-bs-parent="#priceAcc"><div class="accordion-body"><p>Два часа дома или на прогулке. Без постановки: играем, готовим, читаем. Тридцать обработанных кадров.</p><button class="btn btn-rust btn-sm" type="button" data-book="Семейная съёмка">Записаться</button></div></div></div>
+     <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="a4"><span class="me-auto">Интерьер и архитектура</span><span class="pr me-3">от 20 000 &#8381;</span></button></h3><div id="a4" class="accordion-collapse collapse" data-bs-parent="#priceAcc"><div class="accordion-body"><p>Съёмка для дизайнеров, отелей и ресторанов. Работаю со штативом и тилт-шифт объективом, вертикали всегда ровные. От пятнадцати кадров в высоком разрешении.</p><button class="btn btn-rust btn-sm" type="button" data-book="Интерьер и архитектура">Записаться</button></div></div></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section section-stone" id="words">
+ <div class="container">
+  <div id="revs" class="carousel slide pb-5" data-bs-ride="carousel" data-bs-interval="8000">
+   <div class="carousel-inner text-center col-lg-9 mx-auto">
+    <div class="carousel-item active px-4"><p class="quote">Мы выбрали Елену за её серии, а остались за то, что на свадьбе она была почти невидима. Гости до сих пор спрашивают, кто это снимал.</p><p class="text-secondary">Дарья и Михаил, свадьба в Коломенском</p></div>
+    <div class="carousel-item px-4"><p class="quote">Я терпеть не могу фотографироваться. После съёмки я выбирала из сорока кадров, потому что все были мои, а не просто красивые.</p><p class="text-secondary">Ольга Баранова, архитектор</p></div>
+    <div class="carousel-item px-4"><p class="quote">Для нашего отеля Елена сняла 28 интерьеров за один день. Заказы на сайте выросли на треть уже в первый месяц.</p><p class="text-secondary">Павел Ким, управляющий бутик-отеля</p></div>
+   </div>
+   <button class="carousel-control-prev" type="button" data-bs-target="#revs" data-bs-slide="prev" style="filter:invert(1)"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Предыдущий отзыв</span></button>
+   <button class="carousel-control-next" type="button" data-bs-target="#revs" data-bs-slide="next" style="filter:invert(1)"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Следующий отзыв</span></button>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="contact">
+ <div class="container">
+  <div class="row g-5">
+   <div class="col-lg-5">
+    <h2>Давайте обсудим вашу съёмку</h2>
+    <p class="text-secondary mt-3">Расскажите, что вы хотите снять и когда. Отвечаю в течение суток, обычно быстрее.</p>
+    <ul class="list-unstyled mt-4">
+     <li class="mb-2">Телефон и Telegram: <a class="text-reset" href="tel:+74955550187">+7 (495) 555-01-87</a></li>
+     <li class="mb-2">Почта: <a class="text-reset" href="mailto:elena@stavrova-photo.example">elena@stavrova-photo.example</a></li>
+     <li>Студия: Москва, Большая Новодмитровская, 36, корпус 7</li>
+    </ul>
+   </div>
+   <div class="col-lg-7">
+    <form id="contactForm" class="row g-3" novalidate>
+     <div class="col-md-6"><label class="form-label" for="cName">Имя</label><input id="cName" class="form-control" required minlength="2" autocomplete="name"><div class="invalid-feedback">Введите имя.</div></div>
+     <div class="col-md-6"><label class="form-label" for="cMail">Почта</label><input id="cMail" type="email" class="form-control" required autocomplete="email"><div class="invalid-feedback">Введите корректный адрес почты.</div></div>
+     <div class="col-md-6"><label class="form-label" for="cType">Формат съёмки</label><select id="cType" class="form-select" required><option value="">Выберите</option><option>Портретная съёмка</option><option>Свадебный день</option><option>Семейная съёмка</option><option>Интерьер и архитектура</option><option>Консультация</option></select><div class="invalid-feedback">Выберите формат.</div></div>
+     <div class="col-md-6"><label class="form-label" for="cDate">Желаемая дата</label><input id="cDate" type="date" class="form-control" required><div class="invalid-feedback">Выберите дату.</div></div>
+     <div class="col-12"><label class="form-label" for="cMsg">Расскажите о съёмке</label><textarea id="cMsg" class="form-control" rows="4" required minlength="10"></textarea><div class="invalid-feedback">Напишите хотя бы несколько слов, минимум 10 символов.</div></div>
+     <div class="col-12"><button class="btn btn-rust" type="submit">Отправить запрос</button></div>
+    </form>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="py-5">
+ <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+  <div><div class="logo text-white">Елена Ставрова</div><small>Фотограф. Москва.</small></div>
+  <ul class="list-inline mb-0 align-self-md-end"><li class="list-inline-item me-3"><a href="#works">Работы</a></li><li class="list-inline-item me-3"><a href="#prices">Условия</a></li><li class="list-inline-item"><a href="#contact">Контакты</a></li></ul>
+  <small class="align-self-md-end">&copy; 2026 Елена Ставрова. Все права на фотографии защищены.</small>
+ </div>
+</footer>
+
+<div class="toast-zone" id="toastZone" aria-live="polite"></div>
+
+<div class="modal fade" id="lightbox" tabindex="-1" aria-labelledby="lbTitle" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
+  <div class="modal-header border-0"><h2 class="modal-title h4" id="lbTitle"></h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button></div>
+  <div class="modal-body pt-0"><img id="lbImg" class="w-100" alt=""><p id="lbText" class="mt-3 mb-0 text-secondary"></p></div>
+  <div class="modal-footer border-0"><button type="button" class="btn btn-rust" id="lbBook">Хочу такую съёмку</button></div>
+ </div></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+(function(){
+ var WORKS=[
+  {t:'Вечер на набережной',c:'portrait',a:'#f2c9a0',b:'#a8442a',s:'sun',d:'Портрет в контровом свете, Москва-река, апрель.'},
+  {t:'Дарья и Михаил',c:'wedding',a:'#f5e9dc',b:'#8c9bb5',s:'arch',d:'Церемония в Коломенском. Свет от окна и ничего лишнего.'},
+  {t:'Гостиная на Патриарших',c:'interior',a:'#d8d2c4',b:'#2a3550',s:'room',d:'Интерьер для студии дизайна. Вертикали выровнены, окно не пересвечено.'},
+  {t:'Тихое утро',c:'portrait',a:'#c7d1de',b:'#1b2438',s:'win',d:'Портрет у окна, естественный свет, 85 мм.'},
+  {t:'Первый танец',c:'wedding',a:'#e8b9a3',b:'#5b3a47',s:'sun',d:'Свадьба в усадьбе Остафьево, сентябрь.'},
+  {t:'Лобби отеля',c:'interior',a:'#e5dccb',b:'#a8442a',s:'arch',d:'Серия из 28 кадров для бутик-отеля на Покровке.'}
+ ];
+ function art(w,big){
+  var h=big?500:500,sh='';
+  if(w.s==='sun')sh='<circle cx="300" cy="190" r="90" fill="#fff" opacity=".55"/><path d="M0 420Q150 330 300 400T600 380V500H0z" fill="'+w.b+'"/><ellipse cx="200" cy="330" rx="42" ry="60" fill="#14192a" opacity=".85"/><circle cx="200" cy="250" r="30" fill="#14192a" opacity=".85"/>';
+  if(w.s==='arch')sh='<path d="M120 500V210a180 180 0 0 1 360 0V500z" fill="#fff" opacity=".6"/><path d="M180 500V230a120 120 0 0 1 240 0V500z" fill="'+w.b+'" opacity=".7"/><rect x="0" y="440" width="600" height="60" fill="'+w.b+'"/>';
+  if(w.s==='room')sh='<rect x="60" y="80" width="200" height="240" fill="#fff" opacity=".6"/><path d="M160 80v240M60 200h200" stroke="'+w.b+'" stroke-width="6"/><rect x="300" y="300" width="240" height="90" rx="10" fill="'+w.b+'"/><rect x="330" y="260" width="180" height="60" rx="10" fill="'+w.b+'" opacity=".8"/><rect x="0" y="420" width="600" height="80" fill="#fff" opacity=".35"/>';
+  if(w.s==='win')sh='<rect x="150" y="60" width="300" height="380" fill="#fff" opacity=".55"/><path d="M300 60v380M150 250h300" stroke="'+w.b+'" stroke-width="8"/><ellipse cx="300" cy="400" rx="70" ry="100" fill="'+w.b+'"/><circle cx="300" cy="290" r="42" fill="'+w.b+'"/>';
+  var svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="'+w.a+'"/><stop offset="1" stop-color="'+w.b+'"/></linearGradient></defs><rect width="600" height="500" fill="url(#g)"/>'+sh+'</svg>';
+  return 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+ }
+ function portrait(a,b){
+  var svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+a+'"/><stop offset="1" stop-color="'+b+'"/></linearGradient></defs><rect width="480" height="600" fill="url(#g)"/><circle cx="330" cy="170" r="70" fill="#fff" opacity=".5"/><path d="M0 500Q200 440 480 490V600H0z" fill="#14192a" opacity=".5"/><ellipse cx="220" cy="470" rx="110" ry="150" fill="#14192a"/><circle cx="220" cy="270" r="62" fill="#14192a"/></svg>';
+  return 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+ }
+ document.getElementById('heroImg').src=portrait('#f0c7a0','#a8442a');
+ document.getElementById('aboutImg').src=portrait('#cfd6e2','#1b2438');
+ var grid=document.getElementById('grid');
+ WORKS.forEach(function(w,i){
+  var col=document.createElement('div');col.className='col-6 col-lg-4 work-item';col.dataset.c=w.c;
+  col.innerHTML='<button type="button" class="work" data-i="'+i+'" aria-label="Открыть работу: '+w.t+'"><img src="'+art(w)+'" alt="Фотография «'+w.t+'»: '+w.d.replace(/"/g,'')+'"><span>'+w.t+'</span></button>';
+  grid.appendChild(col);
+ });
+ document.getElementById('filters').addEventListener('click',function(e){
+  var b=e.target.closest('[data-f]');if(!b)return;
+  this.querySelectorAll('.btn').forEach(function(x){x.classList.toggle('active',x===b)});
+  var f=b.dataset.f;
+  grid.querySelectorAll('.work-item').forEach(function(it){it.classList.toggle('d-none',f!=='all'&&it.dataset.c!==f)});
+ });
+ var lb=new bootstrap.Modal(document.getElementById('lightbox')),cur=null;
+ grid.addEventListener('click',function(e){
+  var b=e.target.closest('.work');if(!b)return;
+  cur=WORKS[+b.dataset.i];
+  document.getElementById('lbTitle').textContent=cur.t;
+  var im=document.getElementById('lbImg');im.src=art(cur,true);im.alt='Фотография «'+cur.t+'»: '+cur.d;
+  document.getElementById('lbText').textContent=cur.d;lb.show();
+ });
+ var bookForm=document.getElementById('contactForm');
+ function book(type){
+  if(type)document.getElementById('cType').value=type;
+  document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+  setTimeout(function(){document.getElementById('cName').focus({preventScroll:true})},600);
+ }
+ document.getElementById('lbBook').addEventListener('click',function(){
+  var t={portrait:'Портретная съёмка',wedding:'Свадебный день',interior:'Интерьер и архитектура'}[cur.c];
+  lb.hide();book(t);
+ });
+ document.addEventListener('click',function(e){var b=e.target.closest('[data-book]');if(b)book(b.dataset.book)});
+ function toast(msg){
+  var z=document.getElementById('toastZone'),d=document.createElement('div');
+  d.className='alert alert-success alert-dismissible shadow fade show rounded-0';d.setAttribute('role','alert');
+  d.innerHTML='<span></span><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Закрыть"></button>';
+  d.firstChild.textContent=msg;z.appendChild(d);setTimeout(function(){bootstrap.Alert.getOrCreateInstance(d).close()},7000);
+ }
+ var dt=document.getElementById('cDate'),t=new Date();
+ dt.min=t.getFullYear()+'-'+('0'+(t.getMonth()+1)).slice(-2)+'-'+('0'+t.getDate()).slice(-2);
+ bookForm.addEventListener('submit',function(e){
+  e.preventDefault();
+  if(!bookForm.checkValidity()){bookForm.classList.add('was-validated');return}
+  var n=document.getElementById('cName').value.trim();
+  toast(n+', спасибо за запрос. Я отвечу вам на почту в течение суток.');
+  bookForm.reset();bookForm.classList.remove('was-validated');
+ });
+ var nav=document.getElementById('nav'),col=bootstrap.Collapse.getOrCreateInstance(nav,{toggle:false});
+ nav.addEventListener('click',function(e){if(e.target.closest('a')&&nav.classList.contains('show'))col.hide()});
+})();
+</script>
+</body>
+</html>
